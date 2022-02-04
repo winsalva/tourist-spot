@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>La Familia Garden</title>
+    <link rel="stylesheet" href="ts-style.css">    
+  </head>
+  <body>
+    <header class="header">
+      <h1>La Familia Garden</h1>
+      <div class="banner">#KaliwatGudmaling</div>
+    </header>
+    <div id="open-menu" onclick="openMenu();">Menu</div>
+    <div id="close-menu" onclick="closeMenu();">&times;</div>
+    <nav id="nav" class="nav" align="center">
+      <a href="#food-drinks">FOOD & DRINKS</a>
+      <a href="#flowers">FLOWERS</a>
+      <a href="#live-band">LIVE BAND AREA</a>
+      <a href="#photo-booth">PHOTO BOOTH AREA</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+
+    <div class="main_content">
+      <div class="article">
+	<div class="main-image-container">
+	  <img src="images/ts1.jpeg" alt="Sample Image"/>
+	</div>
+	<h2></h2>
+
+	<br><br><br><br><br><br>
+
+	<h3 id="food-drinks">FOOD & DRINKS</h3>
+	<div class="img-container">
+	  <div class="img-containers">
+	    <img src="images/ts11.jpeg">
+	    <p class="title">Fried rice with egg and hot coffee - ₱150</p>
+	    <button onclick="order('Fried rice with egg and hot coffee', 150);">Order Now</button>
+	  </div>
+	  <div class="img-containers">
+            <img src="images/ts12.jpeg">
+	    <p class="title">Sisig - ₱55</p>
+            <button onclick="order('Sisig', 55);">Order Now</button>
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts13.jpeg">
+	    <p class="title">Vege Lumpia - ₱65</p>
+            <button onclick="order('Vege Lumpia', 65);">Order Now</button>
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts16.jpeg">
+            <p class="title">Rice with grilled chicken and shrimp - ₱250</p>
+            <button onclick="order('Rice with grilled chicken and shrimp', 250);">Order Now</button>
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts19.jpeg">
+            <p class="title">Atsara - ₱45</p>
+            <button onclick="order('Atsara', 45);">Order Now</button>
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts20.jpeg">
+            <p class="title">Fries - ₱50</p>
+            <button onclick="order('Fries', 50);">Order Now</button>
+          </div>
+	</div>
+	
+	<h3 id="flowers">FLOWERS</h3>
+	<div class="img-container">
+          <div class="img-containers">
+            <img src="images/ts2.jpeg">
+	    <p class="title"></p>
+          
+          </div>
+          <div class="img-containers">
+            <img src="images/ts3.jpeg">
+	    <p class="title"></p>
+            
+          </div>
+          <div class="img-containers">
+            <img src="images/ts4.jpeg">
+	    <p class="title"></p>
+            
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts5.jpeg">
+            <p class="title"></p>
+
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts6.jpeg">
+            <p class="title"></p>
+
+          </div>
+	  <div class="img-containers">
+            <img src="images/ts7.jpeg">
+            <p class="title"></p>
+
+          </div>
+        </div>
+	<h3 id="live-band">LIVE BAND AREA</h3>
+	<div class="img-container">
+          <div class="img-containers">
+            <img src="images/ts21.jpeg">
+	    <p class="title"></p>
+          </div>
+          <div class="img-containers">
+            <img src="images/ts22.jpeg">
+	    <p class="title"></p>
+          </div>
+          <div class="img-containers">
+            <img src="images/ts21.jpeg">
+	    <p class="title"></p>
+          </div>
+        </div>
+
+	<h3 id="photo-booth">PHOTO BOOTH AREA</h3>
+        <div class="img-container">
+          <div class="img-containers">
+            <img src="images/ts25.jpeg">
+            <p class="title"></p>
+          </div>
+          <div class="img-containers">
+            <img src="images/ts23.jpeg">
+            <p class="title"></p>
+          </div>
+          <div class="img-containers">
+            <img src="images/ts24.jpeg">
+            <p class="title"></p>
+          </div>
+        </div>
+
+    <h3 id="about">ABOUT</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum erat vitae feugiat ultricies. Integer sed euismod dui. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent malesuada odio et erat sagittis, vel tristique nulla porta. Curabitur fermentum dictum massa. Ut a lorem pretium ipsum venenatis blandit. Donec id porttitor ipsum, lacinia tristique eros. Ut rhoncus porta nisi. Nulla facilisi. Quisque sed molestie est. Sed laoreet nisl eu nibh malesuada pretium. Integer non viverra mi, sit amet pulvinar nisi. Nam rutrum nisl lorem, vitae vestibulum quam finibus id. Integer convallis, lectus vitae bibendum placerat, magna ipsum dignissim libero, nec vehicula dolor ante vel odio.</p>
+      
+      
+
+	<p class="contact">Check out <a href="https://m.youtube.com/channel/UCrjoGvweuyALa569lbrNaPw">this link</a> to learn more about us and our services.. </p>
+ 
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+      <h3>La Familia Garden &copy; 2022</h3>
+    </footer>
+
+    <script>
+      function openMenu() {
+	  var nav = document.getElementById('nav');
+	  var closeMenu = document.getElementById('close-menu');
+	  var openMenu = document.getElementById('open-menu');
+	  openMenu.style.display = 'none';
+	  closeMenu.style.display = 'block';
+	  nav.style.display = 'block';
+	  nav.style.display = 'flex';
+      }
+
+      function closeMenu() {
+	  var nav = document.getElementById('nav');
+          var closeMenu = document.getElementById('close-menu');
+          var openMenu = document.getElementById('open-menu');
+          openMenu.style.display = 'block';
+          closeMenu.style.display = 'none';
+          nav.style.display = 'none';
+      }
+
+      function ask_payment(qty, price) {
+	  let f = true;
+	  while(f) {
+	      let payment = prompt(`Your total order cost: ₱${qty*price}\nEnter payment: `);
+	      if(payment == "" || payment == null) {
+		  alert(`You did not enter your payment!`);
+	      } else if(payment < (qty*price)) {
+		  alert(`Payment of ₱${payment} is not enough..`);
+	      } else {
+		  return payment;
+	      }
+	  }
+      }
+
+      function checkout(payment, qty, price) {
+	  if(payment > (qty*price)) {
+	      alert(`Thank you. Here is your change: ${payment-(qty*price)}.\nEnjoy your food!`);
+	  } else {
+	      alert("Thank you. Enjoy your food!");
+	  }
+      }
+
+      function order(item, price) {
+	  let q = true, c = true, loop = true;
+	  while(loop) {
+	      let qty = prompt(`How many ${item}?`);
+	      if(qty == "" || qty == null) {
+		  alert("You did not enter a value");
+		  loop = false;
+		  break;
+	      } else {
+		  let confirm_qty = confirm(`You ordered ${qty} ${item}.\nTotal cost: ${qty*price}`);
+		  if(confirm_qty) {
+		      let payment = ask_payment(qty, price);
+		      checkout(payment, qty, price);
+		      loop = false;
+		      break;
+		  } else {
+		      alert("You canceled your order.");
+		      loop = false;
+		      break;
+		  }
+	      }
+	  }
+      }
+    </script>
+  </body>
+</html>
